@@ -1,0 +1,214 @@
+.list-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 97%;
+    width: 97%;
+    transform: translate(-50%,-50%);
+    border-style: solid;
+    overflow-y: auto;
+}
+.list-header {
+    border-bottom-style: solid;
+    height: 1%;
+    font-size: 15px;
+    text-align: left;
+    padding: 30px;
+    color: black;
+}
+.list-control {
+    position: relative;
+    top: 10%;
+}
+#list-control-create-btn {
+    position: absolute;
+    border-radius: 7px;
+    width: 10%;
+    height: 30px;
+    right: 10%;
+    background-color: white;
+    border: 1px solid black;
+}
+#list-control-search {
+    position: absolute;
+    width: 150px; 
+    padding-left: 30px;
+    height: 26px;
+    left: 10%;
+    border: 1px solid black;
+}
+#list-control-status {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 35%;
+    border: 1px solid black;
+}
+#list-control-priority {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: 55%;
+    border: 1px solid black;
+}
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #00000069;
+    display: none;
+}
+.show-modal {
+    display: block;
+}
+.create-edit-state {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+    background: white;
+    box-shadow: 5px 9px 15px 0px #707070;
+    z-index: 1;
+}
+#create-edit-title-input,
+#create-edit-priority-select,
+#create-edit-description-input {
+     position: relative;
+     top: 20px;
+     left: 10%;
+     width: 200px;
+     height: 25px;
+}
+#create-edit-description-input,
+#create-edit-state-description {
+    top: 45px;
+}
+#create-edit-priority-select,
+#create-edit-state-prioroty {
+    top: 65px;
+}
+.create-edit-state-text {
+    position: relative;
+    left: 10%;
+    top: 20px;
+}
+.create-edit-state-btn {
+    position: relative;
+    top: 120px;
+    left: 10%;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.item-list {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    padding: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    overflow: auto;
+    width: 900px;
+}
+.item{
+    border: 1px solid;
+    padding: 10px;
+    min-width: 300px;
+    height: fit-content;
+    margin-right: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+.item-field{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: auto;
+    height: fit-content;
+    position: relative;
+    top: 30px;
+}
+.item-btns{
+    margin: auto;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.item-description{
+    width: 120px;
+    overflow-wrap: break-word;
+    height: fit-content;
+    text-align: right;
+}
+.item-btns button{
+    width: 100px;
+    height: 30px;
+    background: none;
+    border: 1px solid;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+}
+.item-btns button:hover{
+    background: #e0e0e0;
+}
+
+#item-list-btn-delete {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+#item-list-btn-edit {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.priority {
+    border: 2px dotted gray;
+    padding: 2px;
+    border-radius: 7px;
+}
+.item-completed{
+    background: #ababab;
+}
+.item-completed::after{
+    content: '✔';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid;
+    text-align: center;
+    position: absolute;
+    top: -8px;
+    right: -8px
+}
+.search-container{
+    position: relative;
+    width: fit-content;
+    left: 8%;
+}
+.search-icon{
+    background: url('/search_icon.svg') no-repeat;
+    height: 22px;
+    width: 22px;
+    background-size: 22px;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    z-index: 1;
+}

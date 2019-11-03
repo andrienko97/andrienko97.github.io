@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="todo-list.css">
+</head>
+
+<body>
+    <div class="list-wrapper">
+        <div class="list-header">TODOList</div>
+        <div class="list-control">
+            <div class="search-container">
+              <i class="search-icon"></i>
+              <input id="list-control-search" placeholder="search by title"></input>
+            </div>
+            <select id="list-control-status">
+                <option value="0" selected>All</option>
+                <option value="false">Open</option>
+                <option value="true">Done</option>
+            </select>
+            <select id="list-control-priority">
+                <option value="0" selected>All</option>
+                <option value="High">High</option>
+                <option value="Normal">Normal</option>
+                <option value="Low">Low</option>
+            </select>
+            <button id="list-control-create-btn">Create</button>
+        </div>
+        <div class="modal-overlay">
+            <form class="create-edit-state">
+                <input type="hidden" id="id"/>
+                <div class="create-edit-state-text" id="create-edit-state-title">Title:</div>
+                <input id="create-edit-title-input" placeholder="Title" value=""></input>
+                <div class="create-edit-state-text" id="create-edit-state-description">Description:</div>
+                <input id="create-edit-description-input" placeholder="Description" value=""></input>
+                <div class="create-edit-state-text" id="create-edit-state-prioroty">Prioroty:</div>
+                <select id="create-edit-priority-select">
+                    <option>High</option>
+                    <option>Normal</option>
+                    <option>Low</option>
+                </select>
+                <button class="create-edit-state-btn" id="create-edit-cancel">Cancel</button>
+                <button class="create-edit-state-btn" id="create-edit-save">Save</button>
+            </form>
+        </div>
+        <div class="item-list"></div>
+    </div>
+    <script src="todo-list.js"></script>
+</body>
+
+</html>
